@@ -1,0 +1,56 @@
+<div class="title-container text-center">
+    <h1>Compost Bin Dashboard</h1>
+    <h2>TinyLab</h2>
+</div>
+
+<div class="container">
+    <!-- row with two responsive columns -->
+    <div class="row">
+        <div class="col-sm">
+            <label for="binSelector">Select a bin:</label>
+            <select id="binSelector" class="form-control">
+                <option value="1">Bin 1</option>
+                <option value="2">Bin 2</option>
+                <option value="3">Bin 3</option>
+                <option value="4">Bin 4</option>
+                <option value="5">Bin 5</option>
+            </select>
+            <p>Select the bin you want to see data from.</p>
+        </div>
+        <div class="col-sm">
+            <label for="dataSelector">Select data type:</label>
+            <select id="dataSelector" class="form-control">
+                <option value="temperature">Temperature</option>
+                <option value="humidity">Humidity</option>
+                <option value="moisture">CO2</option>
+                <option value="light">Ammonia</option>
+            </select>
+            <p>Select the type of data you want to see.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <label for="dateSelector">Select date:</label>
+            <input type="datetime-local" id="dateSelector" class="form-control" placeholder="Select date">
+            <p>Select the date you want to see data from.</p>
+        </div>
+        <div class="col-sm">
+            <label for="timeSelector">Select time:</label>
+            <input type="time" id="timeSelector" class="form-control" placeholder="Select time">
+            <p>Select the time you want to see data from.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="map" style="height: 400px; width: 100%;"></div>
+</div>
+
+<div class="container">
+    <p>Plots are shown here.</p>
+</div>
+
+<div class="footer">
+    <img src="https://www.purdue.edu/home/wp-content/themes/purdue-home-theme/imgs/PU-H-light.svg" alt="Purdue University Logo" width="100">
+    <p>&copy; 2024 Developed by Nicolas Miguel Murillo-Cristancho & Nicolas Rendon-Arias</p>
+</div>

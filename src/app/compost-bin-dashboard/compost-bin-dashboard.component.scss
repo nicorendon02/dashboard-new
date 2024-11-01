@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.title-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    /* Set a background image with dim brightness */
+    background-image: url('https://www.purdue.edu/home/wp-content/uploads/2024/10/Hero-2023_KAL_4764-552x311-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title-container h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+#landscape-img {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
