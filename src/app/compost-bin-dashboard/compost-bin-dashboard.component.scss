@@ -26,6 +26,15 @@ body {
     padding: 20px;
     margin-top: 20px;
 }
+
+.charts-container{
+    /* display the charts one by one */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
 #landscape-img {
     width: 100%;
     height: auto;
