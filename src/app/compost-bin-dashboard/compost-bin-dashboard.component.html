@@ -1,56 +1,10 @@
-<div class="title-container text-center">
-    <h1>Compost Bin Dashboard</h1>
-    <h2>TinyLab</h2>
-</div>
-
-<div class="container">
-    <!-- row with two responsive columns -->
-    <div class="row">
-        <div class="col-sm">
-            <label for="binSelector">Select a bin:</label>
-            <select id="binSelector" class="form-control">
-                <option value="1">Bin 1</option>
-                <option value="2">Bin 2</option>
-                <option value="3">Bin 3</option>
-                <option value="4">Bin 4</option>
-                <option value="5">Bin 5</option>
-            </select>
-            <p>Select the bin you want to see data from.</p>
-        </div>
-        <div class="col-sm">
-            <label for="dataSelector">Select data type:</label>
-            <select id="dataSelector" class="form-control">
-                <option value="temperature">Temperature</option>
-                <option value="humidity">Humidity</option>
-                <option value="moisture">CO2</option>
-                <option value="light">Ammonia</option>
-            </select>
-            <p>Select the type of data you want to see.</p>
-        </div>
+<div class="background" style="background-image: url('https://www.purdue.edu/newsroom/wp-content/uploads/2024/05/Fall-Purdue-2023_KAL_4764.jpg'); background-size: cover; background-position: center; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <div class="container text-center" style="background-color: white; border-radius: 15px; padding: 40px; width: 90%; max-width: 500px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <img src="https://www.purdue.edu/home/wp-content/themes/purdue-home-theme/imgs/PU-H-light.svg" alt="Purdue University Logo" width="150" style="margin-bottom: 20px;">
+        <h2 style="font-size: 2.5rem; font-weight: bold; color: black; margin-bottom: 10px;">Welcome!</h2>
+        <p style="font-size: 1.2rem; color: #333; margin-bottom: 20px;">Click on the button to see measurements.</p>
+        <button style="background-color: green; color: white; border: none; border-radius: 10px; padding: 15px 30px; cursor: pointer; font-size: 1.5rem;" onclick="window.location.href='https://rhl.f9b.mytemp.website/';">
+            START
+        </button>
     </div>
-    <div class="row">
-        <div class="col-sm">
-            <label for="dateSelector">Select date:</label>
-            <input type="datetime-local" id="dateSelector" class="form-control" placeholder="Select date">
-            <p>Select the date you want to see data from.</p>
-        </div>
-        <div class="col-sm">
-            <label for="timeSelector">Select time:</label>
-            <input type="time" id="timeSelector" class="form-control" placeholder="Select time">
-            <p>Select the time you want to see data from.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div id="map" style="height: 400px; width: 100%;"></div>
-</div>
-
-<div class="charts-container">
-    <app-sensor-charts></app-sensor-charts>
-</div>
-
-<div class="footer">
-    <img src="https://www.purdue.edu/home/wp-content/themes/purdue-home-theme/imgs/PU-H-light.svg" alt="Purdue University Logo" width="100">
-    <p>&copy; 2024 Developed by Nicolas Rendon-Arias & Nicolas Miguel Murillo-Cristancho</p>
 </div>
